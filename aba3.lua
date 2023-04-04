@@ -1,7 +1,7 @@
 repeat wait() until game.Loaded
 game:GetService("RunService"):Set3dRenderingEnabled(false)
 setfpscap(30)
-task.wait(5)
+task.wait(1)
 
 _G.MinTimer = 60
 
