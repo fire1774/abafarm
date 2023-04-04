@@ -1,6 +1,6 @@
 repeat wait() until game.Loaded
 game:GetService("RunService"):Set3dRenderingEnabled(false)
-setfpscap(15)
+setfpscap(10)
 _G.MinTimer = 60
 local function serverHop()
 	if syn then
