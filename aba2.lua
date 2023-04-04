@@ -9,7 +9,7 @@ _G.MinTimer = 60
 local function serverHop()
 	if syn then
 		syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/fire1774/abafarm/main/aba2.lua", true))()')
-		game:HttpGet("https://raw.githubusercontent.com/fire1774/serverhop/main/serverhop.lua", true)()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fire1774/serverhop/main/serverhop.lua", true))()
 	end
 end
 
