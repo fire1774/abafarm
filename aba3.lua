@@ -16,8 +16,11 @@ local function timerCheck()
 end
 if timerCheck() <= _G.MinTimer then
     repeat task.wait() until timerCheck() > _G.MinTimer
+    game:GetService"RunService":Stop()
     task.wait(1)
     serverHop()
 else
+    game:GetService"RunService":Stop()
+    wait(1)
     serverHop()
 end
